@@ -13,8 +13,10 @@
     <div class="container flex justify-center">
         <!-- login box -->
         <div class="container-md login-box rounded-xl border-2 border-gray-300  p-10 self-center justify-center">
-            <img src="img/download.jpeg" alt="University Logo" class="logo" width="100px">
-
+            <div class="flex justify-center items-center">
+                <img src="img/download.jpeg" alt="University Logo" class="logo" width="100px" style="display: center;">
+            </div>
+            <br>
             <h1 class="text-3xl mb-5 font-medium text-center leading-6 text-gray-900 ">SISKARA</h1>
             <form action="#" method="POST">
                 <div class="sm:col-span-3">
