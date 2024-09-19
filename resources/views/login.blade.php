@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @vite('resources/css/app.css')
     <title>Login Page</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
 </head>
+
 <body>
-    <div class="login-container">
-        <div class="login-box">
-            <img src="img/download.jpeg" alt="University Loo" class="logo">
-            <h1>SISKARA</h1>
+    <div class="container flex justify-center">
+        <!-- login box -->
+        <div class="container-md login-box self-center justify-center">
+            <img src="img/download.jpeg" alt="University Logo" class="logo center" width="100px">
+
+            <h1 class="text-lg mb-5 font-medium text-center leading-6 text-gray-900 ">SISKARA</h1>
             <form action="#" method="POST">
-                <input type="text" placeholder="NIM/NIP/Username/Email" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit">LOGIN</button>
-                <a href="#" class="forgot-password">Forgot password?</a>
+                <div class="sm:col-span-3">
+                    <label for="email"
+                        class="block text-sm text-center font-medium leading-6 text-gray-900">Email</label>
+                    <div class="mt-2">
+                        <input type="text" name="email" id="email" autocomplete="given-email"
+                            class="block w-96 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                </div>
+                <div class="sm:col-span-3">
+                    <label for="password" class="block text-sm text-center font-medium leading-6 text-gray-900">Last
+                        name</label>
+                    <div class="mt-2">
+                        <input type="text" name="password" id="password" autocomplete="family-name"
+                            class="block w-96 mb-5 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                </div>
+                <button type="submit"
+                    class="mb-5 block rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Submit</button>
+                <a href="#" class="forgot-password block text-sm text-right font-medium text-blue-700">Forgot password?</a>
             </form>
-            <p>Don't have an account? <a href="#" class="signup-link">Sign Up</a></p>
+            <p class="block text-sm font-medium ">Don't have an account? <a href="#" class="signup-link text-blue-700">Sign Up</a></p>
         </div>
     </div>
 </body>
+
 </html>
