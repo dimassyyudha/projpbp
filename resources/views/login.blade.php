@@ -12,10 +12,10 @@
 <body>
     <div class="container flex justify-center">
         <!-- login box -->
-        <div class="container-md login-box self-center justify-center">
-            <img src="img/download.jpeg" alt="University Logo" class="logo center" width="100px">
+        <div class="container-md login-box rounded-xl border-2 border-gray-300  p-10 self-center justify-center">
+            <img src="img/download.jpeg" alt="University Logo" class="logo" width="100px">
 
-            <h1 class="text-lg mb-5 font-medium text-center leading-6 text-gray-900 ">SISKARA</h1>
+            <h1 class="text-3xl mb-5 font-medium text-center leading-6 text-gray-900 ">SISKARA</h1>
             <form action="#" method="POST">
                 <div class="sm:col-span-3">
                     <label for="email"
